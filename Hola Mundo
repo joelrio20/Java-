@@ -1,0 +1,44 @@
+
+package hola_mundo;
+
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Hola_mundo {
+
+
+    //metodo 
+    public void scanner(){
+   
+    Scanner scan = new Scanner(System.in); // esta linea es obligatoria para usar el escaner 
+    String name = scan.nextLine();
+    System.out.println("hola " +name);    
+    
+    
+    }
+    
+    
+    public void joption(){
+                
+        
+        String dato2 = JOptionPane.showInputDialog(null);
+        JOptionPane.showConfirmDialog(null, "Hola "+dato2);
+    }
+    
+    
+     //no borrar es un main 
+    public static void main(String[] args) {
+        
+       // System.out.println("hola_mundo.Hola_mundo.main()");
+       Hola_mundo perro = new Hola_mundo();
+       perro.joption();
+       //perro.scanner();
+        
+        
+    }
+    
+    
+    
+    
+}
